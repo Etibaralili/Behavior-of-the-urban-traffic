@@ -17,7 +17,7 @@ object UrbanTrafficLinearRegression {
     val spark = SparkSession
       .builder
       .master("local[*]")
-      .config("spark.sql.warehouse.dir", "E:/Exp/")
+      .config("spark.sql.warehouse.dir", "/temp")
       .appName(s"OneVsRestExample")
       .getOrCreate()
       
